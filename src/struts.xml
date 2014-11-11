@@ -11,9 +11,76 @@
     <package name="default" extends="json-default">
         <action name="HelloJsonAction_*" class="cn.gov.scciq.bussiness.example.HelloJsonAction" method="{1}">
              <result type="json">
-                 <param name="root">result</param>
+                 <param name="root">result</param> 
              </result>
         </action>
-    </package>
+        <action name="AccessorySetAction_*" class="cn.gov.scciq.basicSettings.accessorySet.AccessorySetAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="AdditivePurposeAction_*" class="cn.gov.scciq.basicSettings.additivePurposeSet.AdditivePurposeAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="AdditiveSetAction_*" class="cn.gov.scciq.basicSettings.additiveSet.AdditiveSetAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="CountryAreaAction_*" class="cn.gov.scciq.basicSettings.countryArea.CountryAreaAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="IntendedUseAction_*" class="cn.gov.scciq.basicSettings.intendedUse.IntendedUseAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+          <action name="ItemAction_*" class="cn.gov.scciq.basicSettings.item.ItemAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="MaterialClassAction_*" class="cn.gov.scciq.basicSettings.materialClass.MaterialClassAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="MaterialSourceAction_*" class="cn.gov.scciq.basicSettings.materialSource.MaterialSourceAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="PackageTypeAction_*" class="cn.gov.scciq.basicSettings.packageType.PackageTypeAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="ProcessingDegreeAction_*" class="cn.gov.scciq.basicSettings.processingDegree.ProcessingDegreeAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="ProcessingWayAction_*" class="cn.gov.scciq.basicSettings.processingWay.ProcessingWayAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="ProductClassAction_*" class="cn.gov.scciq.basicSettings.productClass.ProductClassAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="StorageConditionAction_*" class="cn.gov.scciq.basicSettings.storageCondition.StorageConditionAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+          
+    </package>  
+   
 
 </struts>

@@ -18,7 +18,8 @@ public class HelloJsonService{
         return JSONObject.fromObject(bean);
     }
     
-    public JSONObject handleSubmit2(String data){
+    public JSONObject handleSubmit2(String data){   
+    	
         JSONObject jo = JSONObject.fromObject(data);
         UserBean user = (UserBean)JSONObject.toBean(jo, UserBean.class);
         return JSONObject.fromObject(user);

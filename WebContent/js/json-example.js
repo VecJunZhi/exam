@@ -1,6 +1,6 @@
 $(document).ready(
 		function() {
-			$("#normal_submit").click(function() {
+			$("#normal_submit").click(function() {  /*普通方式post*/
 				var id = $("#normal_id").val();
 				var name = $("#normal_name").val();
 				var user = {

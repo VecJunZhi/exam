@@ -21,7 +21,7 @@
             maxIdle="5"
             maxWait="10000"
             username="sa"
-            password="123456"
+            password="7654321ace"  
             type="javax.sql.DataSource"
-            url="jdbc:sqlserver://127.0.0.1:3319;database=FRM_Sichuan;" />
+            url="jdbc:sqlserver://localhost:1433;database=FRM_Sichuan;" />
 </Context>
