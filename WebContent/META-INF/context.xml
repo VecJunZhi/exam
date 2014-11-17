@@ -23,5 +23,7 @@
             username="sa"
             password="7654321ace"  
             type="javax.sql.DataSource"
-            url="jdbc:sqlserver://localhost:1433;database=FRM_Sichuan;" />
+            url="jdbc:sqlserver://localhost:1433;database=FRM_Sichuan;" >
+     </Resource>
+
 </Context>

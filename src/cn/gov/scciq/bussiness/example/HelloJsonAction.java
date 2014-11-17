@@ -1,5 +1,7 @@
 package cn.gov.scciq.bussiness.example;
 
+import java.io.IOException;
+
 import net.sf.json.JSONObject;
 
 import org.apache.commons.logging.Log;
@@ -13,7 +15,7 @@ public class HelloJsonAction{
     
     private int id;
     
-    private String name;     
+    private String name;
     
     private String data;
     
@@ -46,7 +48,7 @@ public class HelloJsonAction{
         this.data = data;
     }
 
-    public JSONObject getResult() {   
+    public JSONObject getResult() {
         return result;
     }
 
@@ -62,25 +64,25 @@ public class HelloJsonAction{
     
     
     public String normalSubmit(){
-    	
         log.debug("获取post提交数据：id-"+id+" name-"+name);
         result = jsonService.handleSubmit(id, name);
         return Action.SUCCESS;
     }
     
-    public String normalSubmit2(){  
-    	log.info("helojolj");
-     //   log.debug("获取post提交数据：data-"+data);
+    public String normalSubmit2(){
+        log.debug("获取post提交数据：data-"+data);
         result = jsonService.handleSubmit2(data);        
         return Action.SUCCESS;
     }
     
-    public String getJson(){
-    	log.info("dfljel");
-        result = jsonService.handleGetJson();
+    public String getJson() throws IOException{
+        result = jsonService.handleGetJsonFromFile();
         return Action.SUCCESS;   
     }
     
+    public static void main(String[] args) {
+        new HelloJsonAction().submit();
+    }
 }
 
 
