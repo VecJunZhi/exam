@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" extends="json-default">
+        <action name="HelloJsonAction_*" class="cn.gov.scciq.bussiness.example.HelloJsonAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param> 
+             </result>
+        </action>
+<!-- <<<<<<< HEAD -->
+        <action name="AccessorySetAction_*" class="cn.gov.scciq.basicSettings.accessorySet.AccessorySetAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="AdditivePurposeAction_*" class="cn.gov.scciq.basicSettings.additivePurposeSet.AdditivePurposeAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="AdditiveSetAction_*" class="cn.gov.scciq.basicSettings.additiveSet.AdditiveSetAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="CountryAreaAction_*" class="cn.gov.scciq.basicSettings.countryArea.CountryAreaAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="IntendedUseAction_*" class="cn.gov.scciq.basicSettings.intendedUse.IntendedUseAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+          <action name="ItemAction_*" class="cn.gov.scciq.basicSettings.item.ItemAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="MaterialClassAction_*" class="cn.gov.scciq.basicSettings.materialClass.MaterialClassAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="MaterialSourceAction_*" class="cn.gov.scciq.basicSettings.materialSource.MaterialSourceAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+         <action name="PackageTypeAction_*" class="cn.gov.scciq.basicSettings.packageType.PackageTypeAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="ProcessingDegreeAction_*" class="cn.gov.scciq.basicSettings.processingDegree.ProcessingDegreeAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="ProcessingWayAction_*" class="cn.gov.scciq.basicSettings.processingWay.ProcessingWayAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="ProductClassAction_*" class="cn.gov.scciq.basicSettings.productClass.ProductClassAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+        <action name="StorageConditionAction_*" class="cn.gov.scciq.basicSettings.storageCondition.StorageConditionAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>  
+             </result>
+        </action>
+          
+            </package>  
+   
+<!-- ======= -->
+  <package name="select" extends="json-default">
+      	<action name="SelectDataAction_*" class="cn.gov.scciq.bussiness.select.SelectDataAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>
+             </result>
+        </action>
+      	<action name="SearchSelectAction_*" class="cn.gov.scciq.bussiness.searchSelect.SearchSelectAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>
+             </result>
+        </action>
+        <action name="ConventionCtrlAction_*" class="cn.gov.scciq.bussiness.riskCtrl.ConventionCtrlAction" method="{1}">
+             <result type="json">
+                 <param name="root">result</param>
+             </result>
+        </action>
+    </package>
+<!-- >>>>>>> branch 'master' of https://github.com/xuchaobei/SCFRM.git -->
+
+</struts>
